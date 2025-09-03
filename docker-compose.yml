@@ -12,9 +12,14 @@ services:
       - php
 
   php:
-    build: ./docker/php
+    build:
+      context: ./docker/php
+      args:
+        UID: 1000
+        GID: 1000
     volumes:
       - ./src:/var/www/
+    user: "1000:1000"
 
   mysql:
     image: mysql:8.0.26
