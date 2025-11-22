@@ -4,7 +4,7 @@
 
 ### Docker ビルド
 
-- git clone
+- git clone git@github.com:takuichi01/AttendanceManager.git
 - docker-compose up -d --build
 
 ### Laravel 環境構築
