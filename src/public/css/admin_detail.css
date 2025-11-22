@@ -1,0 +1,164 @@
+body {
+    background: #f3f3f3;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+}
+
+.site-header {
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: 60px;
+}
+
+.header-logo .logo-img {
+    height: 40px;
+}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logout-btn {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 0;
+}
+
+.logout-btn:hover {
+    text-decoration: underline;
+}
+
+.detail-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.detail-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-left: 16px;
+    border-left: 5px solid #000;
+}
+
+.detail-box {
+    background: #fff;
+    border-radius: 8px;
+    padding: 40px 32px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.detail-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.detail-table tr {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.detail-table tr:last-child {
+    border-bottom: none;
+}
+
+.detail-table th {
+    width: 140px;
+    padding: 24px 16px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 15px;
+    color: #333;
+    background: #fafafa;
+    vertical-align: top;
+}
+
+.detail-table td {
+    padding: 24px 16px;
+    font-size: 15px;
+    color: #333;
+}
+
+.date-year,
+.date-day {
+    display: inline-block;
+    margin-right: 16px;
+    font-weight: bold;
+}
+
+.time-input {
+    width: 90px;
+    padding: 8px 12px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.time-separator {
+    margin: 0 12px;
+    color: #666;
+    font-weight: bold;
+}
+
+.staff-name {
+    font-weight: bold;
+}
+
+.remark-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 12px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+input,
+textarea {
+    font-weight: bold;
+}
+
+.button-wrapper {
+    text-align: right;
+}
+
+.submit-button {
+    background: #000;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.submit-button:hover {
+    background: #333;
+}
+
+.error-message {
+    color: red;
+}

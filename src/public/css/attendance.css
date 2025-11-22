@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5f5f5;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* ヘッダー */
+.site-header {
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: 60px;
+}
+
+.header-logo .logo-img {
+    height: 40px;
+}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.header-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.logout-btn {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 0;
+}
+
+.logout-btn:hover {
+    text-decoration: underline;
+}
+
+/* メインコンテンツ */
+.attendance-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 60px);
+    padding: 40px 20px;
+}
+
+.status-badge {
+    margin-bottom: 40px;
+}
+
+.badge {
+    display: inline-block;
+    background: #e0e0e0;
+    color: #666;
+    padding: 8px 24px;
+    border-radius: 20px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.date-time {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.date {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.time {
+    font-size: 5em;
+    font-weight: bold;
+    color: #000;
+    letter-spacing: 0.05em;
+}
+
+.action-button button {
+    font-size: 1.5rem;
+    padding: 0.8em 2em;
+    border-radius: 12px;
+    border: none;
+    margin: 0.5em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn-clock-in {
+    background: #000;
+    color: #fff;
+}
+
+.btn-clock-out {
+    background: #000;
+    color: #fff;
+}
+
+.btn-break-in {
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+.btn-break-out {
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+.action-button button:hover {
+    opacity: 0.8;
+}
+
+.btn-clock-in:hover {
+    background: #333;
+}
+
+.after-work-sentence {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222;
+    margin-top: 32px;
+    text-align: center;
+}
+
+.button-row {
+    display: flex;
+    gap: 16px;
+}
+
+.button-row form {
+    margin: 0;
+}
