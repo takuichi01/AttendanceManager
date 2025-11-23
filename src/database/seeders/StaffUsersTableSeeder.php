@@ -16,9 +16,16 @@ class StaffUsersTableSeeder extends Seeder
     public function run()
     {
         $param = [
-            'name' => 'Staff User',
-            'email' => 'staff@example.com',
-            'password' => Hash::make('staff_pass'),
+            'name' => 'Staff User1',
+            'email' => 'staff1@example.com',
+            'password' => Hash::make('staff1_pass'),
+        ];
+        DB::table('staff_users')->insert($param);
+
+        $param = [
+            'name' => 'Staff User2',
+            'email' => 'staff2@example.com',
+            'password' => Hash::make('staff2_pass'),
         ];
         DB::table('staff_users')->insert($param);
     }

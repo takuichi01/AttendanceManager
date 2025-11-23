@@ -43,6 +43,20 @@ body {
     font-weight: bold;
 }
 
+.logout-btn {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 0;
+}
+
+.logout-btn:hover {
+    text-decoration: underline;
+}
+
 .detail-container {
     max-width: 700px;
     margin: 0 auto;
